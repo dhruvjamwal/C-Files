@@ -1,0 +1,14 @@
+int BinarySearch (int* S , int n , int e ){
+// S is a sorted array
+int first = 0 , last = n ;
+int mid = ( first + last ) / 2;
+while ( first < last ) {
+if ( S [ mid ] == e ) return mid ;
+if ( S [ mid ] > e ) {
+last = mid ;
+} else {
+first = mid + 1;
+}
+mid = ( first + last ) / 2;
+}
+return -1;

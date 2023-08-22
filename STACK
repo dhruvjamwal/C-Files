@@ -1,1 +1,16 @@
+-------------Implementing stack
 
+class arrayStack {
+int N = 2; // Capacity
+int * S = NULL ; // pointer to array
+int h = -1; // Current head of the stack
+public :
+arrayStack () { S = (int *) malloc ( sizeof (int )* N ); }
+int size () { return h +1; }
+bool empty () { return h <0; }
+int top () { return S [ h ]; } // On empty stack what happens ?
+void push (int e ) {
+if( size () == N ) expand (); // Expand capacity of the stack
+S [++ h ] = e ;
+}
+void pop () { if( ! empty () ) h - -; }

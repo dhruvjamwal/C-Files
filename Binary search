@@ -1,3 +1,4 @@
+-------------BinarySearch--------------
 int BinarySearch (int* S , int n , int e ){       //search on well-structured data
 // S is a sorted array
 int first = 0 , last = n ;

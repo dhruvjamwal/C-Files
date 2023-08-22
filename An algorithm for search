@@ -9,8 +9,9 @@ return i ;
 }
 return -1; if file not found
 }
-
+--------------------------
 // test to compare the performance vector/array
+
 # include < iostream >
 # include < vector >
 # include " rdtsc .h"
@@ -28,3 +29,38 @@ max = bigarray [ k ];
 }
 return max ;
 }                             // 3N memory operations
+
+--------------------------
+// Weak Pointer usage
+
+# include < iostream >
+# include < memory >
+class Node {
+public :
+Node ( int value ) : value ( value ) { std :: cout << " Node " << value << " created ." << std :: endl ; }
+// Functions to set/ get the next node / weak ref to previous node / shared ref to previous node
+void setNext ( std :: shared_ptr < Node > next ) { nextNode = next ; }
+void setWeakPrev ( std :: shared_ptr < Node > next ) { prevWeakNode = next ; }
+void setPrev ( std :: shared_ptr < Node > next ) { prevNode = next ; }
+std :: shared_ptr < Node > getNext () const { return nextNode ; }
+std :: shared_ptr < Node > getPrev () const { return prevNode ; }
+std :: shared_ptr < Node > getWeakPrev () const { return prevWeakNode . lock (); }
+// Function to display the value of the node
+void display () const { std :: cout << " Node value : " << value << std :: endl ; }
+private :
+int value ;
+std :: shared_ptr < Node > nextNode ;
+std :: shared_ptr < Node > prevNode ;
+std :: weak_ptr < Node > prevWeakNode ;
+};
+void print_list ( std :: weak_ptr < Node > current ) {
+for (int i = 0; i < 5; ++ i) {
+auto current_ref = current . lock ();
+if ( current_ref ) {
+current_ref -> display ();
+current = current_ref -> getNext ();
+} else {
+std :: cout << " Next node is nullptr ." << std :: endl ; break ;
+}
+}
+}

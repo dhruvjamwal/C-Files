@@ -40,3 +40,12 @@ we have seen the worst case.
 Most often loop will iterate k
 times
 
+------------------------------------
+// Big-O Notation
+In BinarySearch, let n = 2k−1
+.
+1. Worst case:e ∈/ S
+kTRead + (6k + 5)TArith + (3k + 1)Tjump + Treturn ∈ O(k)
+Since k = log n + 1, therefore k ∈ O(log n)
+Therefore, the worst-case running time of BinarySearch is O(log n).
+

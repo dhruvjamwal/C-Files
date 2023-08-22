@@ -1,3 +1,4 @@
+// searching an element
 int search ( int* S , int n , int e ) {
 // n is length of the array S
 // looking for element e in S
@@ -8,3 +9,22 @@ return i ;
 }
 return -1; if file not found
 }
+
+// test to compare the performance vector/array
+# include < iostream >
+# include < vector >
+# include " rdtsc .h"
+using namespace std ; 
+int local_vector ( size_t N ) {
+vector <int > bigarray ;     // initially empty vector
+// Fill vector upto length N
+for ( unsigned int k = 0; k < N ; ++ k )
+bigarray . push_back ( k );
+                             // Find the max value in the vector
+int max = 0;
+for ( unsigned int k = 0; k < N ; ++ k ) {
+if( bigarray [ k ] > max )
+max = bigarray [ k ];
+}
+return max ;
+}                             // 3N memory operations

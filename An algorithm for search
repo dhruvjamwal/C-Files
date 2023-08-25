@@ -1,4 +1,5 @@
 // searching an element
+
 int search ( int* S , int n , int e ) {
 // n is length of the array S
 // looking for element e in S
@@ -21,7 +22,9 @@ vector <int > bigarray ;     // initially empty vector
 // Fill vector upto length N
 for ( unsigned int k = 0; k < N ; ++ k )
 bigarray . push_back ( k );
-                             // Find the max value in the vector
+
+// Find the max value in the vector
+
 int max = 0;
 for ( unsigned int k = 0; k < N ; ++ k ) {
 if( bigarray [ k ] > max )

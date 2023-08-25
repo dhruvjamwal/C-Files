@@ -13,7 +13,9 @@ for ( int i : s ) // printing elements of a container
 std :: cout << i << ’\n’;
 return 0;
 
+
 //C++ Sequential Container (vector)
+
 #include <iostream>
 #include <vector>
 using namespace std;

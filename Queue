@@ -1,4 +1,5 @@
 //array implementation of queue
+
 int head = 0 , tail =0 , N = INITIAL_CAPCITY ;
 Object items [ N ]; // Some initial size
 bool empty () { return ( head == tail ); }

@@ -33,3 +33,21 @@ int main() {
 
   return 0;
 }
+
+----------------//
+Let us create a test to compare the performance 
+// assumes the 64 - bit machine
+
+int main () {
+ClockCounter t ; // counts elapsed cycles
+size_t MN = 4*32*32*32*32*16;
+size_t N = 4;
+while ( N <= MN ) {
+t . start ();
+test_local_vector ( MN / N , N );
+double diff = t . stop ();
+// print average time for 3 memory operations
+std :: cout << "N = " << N << " : " << ( diff / MN );
+N = N *32;
+}
+}

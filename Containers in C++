@@ -36,7 +36,7 @@ int main() {
 
 ------//
 Let us create a test to compare the performance 
-      // assumes the 64 - bit machine
+------// assumes the 64 - bit machine
 
 int main () {
 ClockCounter t ; // counts elapsed cycles

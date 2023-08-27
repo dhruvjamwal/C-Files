@@ -51,3 +51,21 @@ std :: cout << "N = " << N << " : " << ( diff / MN );
 N = N *32;
 }
 }
+// containers are abstract data type
+map<T,T> Source: 
+# include < iostream >
+# include < string >
+# include <map >
+int main () {
+std :: map < std :: string ,int > cart ;
+// Set some initial values :
+cart [" soap "] = 2;
+cart [" salt "] = 1;
+cart . insert ( std :: make_pair ( "pen ", 10 ) );
+cart . erase (" salt ");
+// access elements
+std :: cout << " Soap : " << cart [" soap "] << "\n";
+std :: cout << "Hat: " << cart ["hat"] << "\n";
+std :: cout << "Hat: " << cart . at ("hat") << "\n";
+}
+

@@ -31,7 +31,8 @@ if( bigarray [ k ] > max )
 max = bigarray [ k ];
 }
 return max ;
-}                             // 3N memory operations
+}                             
+// 3N memory operations
 
 --------------------------
 // Weak Pointer usage

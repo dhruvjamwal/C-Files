@@ -1,4 +1,4 @@
--------------Implementing stack
+//Implementing stack
 
 class arrayStack {
 int N = 2; // Capacity

@@ -6,11 +6,11 @@ bool empty () { return ( head == tail ); }
 bool size () { return ( N + tail - head )% N ; }
 Object front () { return items [ head ]; 
 
------------------//Array implementation
+--------------//Array implementation
 
 void dequeue () {
-if( empty () ) throw Empty ; // Queue is empty
-free ( items [ head ]); items [ head ] = NULL ; // Clear memory
+if( empty () ) throw Empty ;                     // Queue is empty
+free ( items [ head ]); items [ head ] = NULL ;  // Clear memory
 head = ( head +1)% N ; // Remove an element
 }
 void enqueue ( Object x ) {

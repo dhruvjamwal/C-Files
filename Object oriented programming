@@ -1,5 +1,12 @@
-Pointers to structures
+//Pointers to structures
 
 void expand2(circle*c,double factor)(
 (*c).r = (*c).r * factor;
 )
+
+//Representing 3 dimension vector
+
+struct v3{
+double x,y,z;
+};
+

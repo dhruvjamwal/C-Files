@@ -1,1 +1,11 @@
+//Recursive procedure to show binary search
+
+Algorithm BinarySearch(a,k,low,high)
+if low>high return nil // key not there
+  else midz<-(low+high)/2
+    if k=A[mid] return mid
+      elseif k<A[mid]
+          return BinarySearch(a,k,low,mid-1)
+          return BinarySearch(a,k,mid+1,high)
+
 

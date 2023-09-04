@@ -15,3 +15,11 @@ double x,y,z;
 v3 operator+ (v3 a, v3 b){
 return make_v3(a.x+b.x, a.y+b.y, +a.z+b.z)}
 
+//Template Classes
+
+template<T>
+class v3{
+private: t,x,y,z
+public: V3(T p=0, T q=0, T r=0){ x = p; y = q; z = r;}
+V3 operator+(V3 w);
+}

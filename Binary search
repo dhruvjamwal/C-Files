@@ -1,6 +1,7 @@
 -------------BinarySearch--------------
 int BinarySearch (int* S , int n , int e ){       //search on well-structured data
 // S is a sorted array
+
 int first = 0 , last = n ;
 int mid = ( first + last ) / 2;
 while ( first < last ) {
@@ -17,7 +18,9 @@ return -1;
 -------Best/Average/Worst case to run above code--------
 
 int BinarySearch (int* S , int n , int e ){   //let n = 2k−1    
+
 // S is a sorted array
+
 int first = 0 , last = n ;
 int mid = ( first + last ) / 2;
 while ( first < last ) {
@@ -31,7 +34,7 @@ mid = ( first + last ) / 2;
 }
 return -1;
 //logic In BinarySearch, let n = 2k−1
-.
+
 1. Best case: e == S[n/2]
 TRead + 6TArith + Treturn,
 2. Worst case:e ∈/ S
@@ -42,6 +45,7 @@ times
 
 ------------------------------------
 // Big-O Notation
+
 In BinarySearch, let n = 2k−1
 .
 1. Worst case:e ∈/ S

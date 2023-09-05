@@ -6,7 +6,7 @@ bool empty () { return ( head == tail ); }
 bool size () { return ( N + tail - head )% N ; }
 Object front () { return items [ head ]; 
 
-------//Array implementation
+//array implementation
 
 void dequeue () {
 if( empty () ) throw Empty ;                     // Queue is empty

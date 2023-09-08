@@ -1,2 +1,5 @@
 // A tree is either a node
 or the  structure consisting of a node and a set of children trees.
+
+// Usually, we store data on the tree nodes.
+We define the label(n) of a node n as the data stored on the node.

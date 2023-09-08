@@ -4,11 +4,7 @@ or the  structure consisting of a node and a set of children trees.
 // Usually, we store data on the tree nodes.
 We define the label(n) of a node n as the data stored on the node.
 
-The level/depth of a node n as follows.
+The level/depth of a node n is 
 level(n) =
-(
-0 if n is a root
-level(n
-′
-) + 1 n
-′ ∈ parent(n)
+    ( 0 if n is a root 
+    level(n′) + 1′∈ parent(n)

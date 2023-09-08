@@ -1,3 +1,2 @@
-a tree is either a node or a set of children connected to node
-A tree is either a node
+// A tree is either a node
 or the  structure consisting of a node and a set of children trees.

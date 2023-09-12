@@ -1,1 +1,1 @@
-Problem-Solving with  Data Structures and Algorithms!
+Problem-Solving with  Data Structure and Algorithms!

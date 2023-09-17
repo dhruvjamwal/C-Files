@@ -19,7 +19,8 @@ return make_v3(a.x+b.x, a.y+b.y, +a.z+b.z)}
 //Template Classes
 
 template<T>
-class v3{
+class v3
+{ 
 private: t,x,y,z
 public: V3(T p=0, T q=0, T r=0){ x = p; y = q; z = r;}
 V3 operator+(V3 w);

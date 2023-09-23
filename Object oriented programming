@@ -16,7 +16,7 @@ double x,y,z;
 v3 operator+ (v3 a, v3 b){
 return make_v3(a.x+b.x, a.y+b.y, +a.z+b.z)}
 
-//Template Classes
+//Template Class
 
 template<T>
 class v3

@@ -8,3 +8,8 @@ The level/depth of a node n is
 level(n) =
     ( 0 if n is a root 
     level(n′) + 1′∈ parent(n)
+HeapSort(Tree T)
+1 T.size = |nodes of T|;
+2 BuildHeap(T);
+3 while T.size > 0 do
+4 DeleteMax(T)

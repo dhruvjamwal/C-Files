@@ -27,3 +27,4 @@ V3 operator+(V3 w);
 }
 template<T>
 V3 V3::operator+(V3 w){ return V3(x+w.x, y+w.y, z+w.z); }
+// To implement friend class

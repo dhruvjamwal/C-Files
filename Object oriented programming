@@ -33,3 +33,23 @@ V3 V3::operator+(V3 w){ return V3(x+w.x, y+w.y, z+w.z); }
 // Types of polymorphism
 // To perform operator overloading
 // Using inline functions
+
+// To implement friend class
+
+#include <iostream>
+using namespace std;
+class myclass{
+    int data_;
+public:
+    myclass(int i) : data_(i) {}
+    friend void display(const myclass& a);
+};
+void display(const myclass& a){
+    cout<<"data ="<< a.data_;
+    
+} 
+int main()
+{
+    myclass obj(7);
+    display(obj);
+}

@@ -53,3 +53,5 @@ int main()
     myclass obj(7);
     display(obj);
 }
+
+// constructor member function

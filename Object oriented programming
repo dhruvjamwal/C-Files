@@ -14,6 +14,85 @@ double x,y,z;
 
 *infix operator
 v3 operator+ (v3 a, v3 b){
+
+// temp {
+#include <iostream>
+using namespace std;
+class vector{
+private:
+    int x;
+    int y;
+public:
+    vector();
+    vector(int c, int d);
+    void set(int x1, int y1)
+    { x = x1; y=y1;}
+    int squarenorm();
+    void print();
+    void print(int z);
+    
+    vector operator + (vector v);
+    int operator * (vector v);
+    void operator ++();
+    void operator ++(int);
+    
+};
+
+
+void vector::operator ++(){
+    x++;
+    y++;
+    
+    
+}
+
+ void vector::operator ++(int){
+     x++;
+     y++;
+ }
+ 
+ int vector::operator * (vector v) {
+     return (x*v.x + y*v.y);
+     
+ }
+ vector vector::operator + (vector v) {
+     vector v2;
+     v2.set(x+v.x, y + v.y);
+     return v2;
+ }
+ int vector::squarenorm(){
+     return (x*x + y*y);
+ }
+ void vector::print(int z){
+     x = z*x;
+     y = z*y;
+     cout<<x<<y;
+ }
+  void vector::print(){
+      int nm = squarenorm();
+      cout<<x<<y;
+      
+  }
+ int main()
+ {
+     vector u(7,7);
+     vector z(9,9);
+      
+    vector v = u + z;
+    
+    v.print();
+     
+    int y =u*z;
+    cout<<"dot product of u and z is:"<<y;
+    ++u;
+    u.print();
+     z++;
+     z.print();
+     
+    
+ }
+
+}// temp
 return make_v3(a.x+b.x, a.y+b.y, +a.z+b.z)}
 
 //Template Class

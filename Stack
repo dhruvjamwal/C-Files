@@ -24,8 +24,6 @@ int stack::pop(){
     return x;
 }
 
-// To implement stack using linked list
-
 void stack::print() {
     lst.print();
 }
@@ -39,6 +37,8 @@ int main()
     stk.push(30);
     
 }
+
+// To implement stack using linked list
 
 
 

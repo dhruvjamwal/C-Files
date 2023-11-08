@@ -68,3 +68,6 @@ std :: cout << " Next node is nullptr ." << std :: endl ; break ;
 }
 }
 }
+
+dijkstra algorithm
+time complexity O(n^2) [assuming adjaceny matrix representation]

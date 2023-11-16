@@ -71,3 +71,7 @@ std :: cout << " Next node is nullptr ." << std :: endl ; break ;
 
 dijkstra algorithm ( dyke stra algo )
 time complexity O(n^2) [assuming adjaceny matrix representation]
+
+
+Quick Sort Algorithm 
+time complecity -> O(n)

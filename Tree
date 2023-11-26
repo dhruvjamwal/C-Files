@@ -6,11 +6,11 @@ or the  structure consisting of a node and a set of children trees.
 // Usually, we store data on the tree nodes.
  We define the label(n) of a node n as the data stored on the node.
 
-The level/depth of a node n is 
-level(n) =
+ The level/depth of a node n is 
+ level(n) =
     ( 0 if n is a root 
     level(n′) + 1′∈ parent(n)
-HeapSort(Tree T)
+ HeapSort(Tree T)
 1 T.size = |nodes of T|;
 2 BuildHeap(T);
 3 while T.size > 0 do

@@ -4,7 +4,7 @@ or the  structure consisting of a node and a set of children trees.
 // B Tree
 
 // Usually, we store data on the tree nodes.
- We define the label(n) of a node n as the data stored on the node.
+We define the label(n) of a node n as the data stored on the node.
 
  The level/depth of a node n is 
  level(n) =

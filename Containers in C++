@@ -48,8 +48,7 @@ test_local_vector ( MN / N , N );
 double diff = t . stop ();
 // print average time for 3 memory operations
 std :: cout << "N = " << N << " : " << ( diff / MN );
-N = N *32;
-}
+N = N *32;}
 }
 // containers are abstract data type
 map<T,T> Source: 

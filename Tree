@@ -16,3 +16,4 @@ We define the label(n) of a node n as the data stored on the node.
 3 while T.size > 0 do
 4 DeleteMax(T)
 // Binary Search Tree
+// AVL Tree

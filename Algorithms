@@ -74,3 +74,5 @@ time complexity O(n^2) [assuming adjaceny matrix representation]
 
 Quick Sort Algorithm 
 time complecity -> O(n)
+
+Sorting algorithm classifiied as stable & unstable

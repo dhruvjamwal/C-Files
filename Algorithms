@@ -76,3 +76,5 @@ Quick Sort Algorithm
 time complecity -> O(n)
 
 Sorting algorithm classifiied as stable & unstable
+stable - bubble sort, insertion sort, merge sort
+unstable- quick sort, radix sort, heap sort

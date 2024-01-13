@@ -17,3 +17,4 @@ We define the label(n) of a node n as the data stored on the node.
 4 DeleteMax(T)
 // Binary Search Tree
 // AVL Tree
+// red-black tree

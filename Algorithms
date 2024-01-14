@@ -79,3 +79,4 @@ Sorting algorithm classifiied as stable & unstable
 stable - bubble sort, insertion sort, merge sort
 unstable- quick sort, radix sort, heap sort
 // bellman ford algorithm
+// prims algorithm

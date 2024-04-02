@@ -1,1 +1,9 @@
-
+algorithm to sort stack
+void sort(stack<int>&s)
+if(s.size==10
+return;
+int temp = s.top
+s.pop
+sort(s)
+insert(s.stemp)
+returnn;

@@ -5,5 +5,5 @@ return;
 int temp = s.top
 s.pop
 sort(s)
-insert(s.stemp)
-returnn;
+insert(s,temp)
+return;

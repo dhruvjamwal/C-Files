@@ -19,3 +19,4 @@ We define the label(n) of a node n as the data stored on the node.
 // AVL Tree
 // red-black tree
 // rotation
+// MST

@@ -7,3 +7,5 @@ s.pop
 sort(s)
 insert(s,temp)
 return;
+
+reverse a stack using recursion

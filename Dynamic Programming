@@ -1,4 +1,4 @@
-algorithm to sort stack
+[ algorithm to sort stack
 void sort(stack<int>&s)
 if(s.size==10
 return;
@@ -6,12 +6,12 @@ int temp = s.top
 s.pop
 sort(s)
 insert(s,temp)
-return;
+return; ]
 
-reverse a stack using recursion
+[ reverse a stack using recursion
 void reverse(stack<int>&s)
 { if (s.size==1)
   return
 int temp = s.top
 s.pop
-reverse(s)
+reverse(s) ]

@@ -17,5 +17,7 @@ int temp = s.top
 s.pop
 reverse(s) ]
 
+
+
 subset sum problem
 

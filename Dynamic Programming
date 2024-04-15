@@ -12,6 +12,7 @@ return; ]
 
 
 
+
 [ reverse a stack using recursion
 void reverse(stack<int>&s)
 { if (s.size==1)

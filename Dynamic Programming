@@ -9,10 +9,6 @@ insert(s,temp)
 return; ]
 
 
-
-
-
-
 [ reverse a stack using recursion
 void reverse(stack<int>&s)
 { if (s.size==1)
@@ -24,4 +20,5 @@ reverse(s) ]
 
 
 subset sum problem
+MCM memoization
 

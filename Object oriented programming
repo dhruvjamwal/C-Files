@@ -15,6 +15,7 @@ double x,y,z;
 *infix operator
 v3 operator+ (v3 a, v3 b){
 
+
 // temp {
 #include <iostream>
 using namespace std;

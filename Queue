@@ -8,6 +8,7 @@ Object front () { return items [ head ];
 
 //array implementation
 
+
 void dequeue () {
 if( empty () ) throw Empty ;                     // Queue is empty
 free ( items [ head ]); items [ head ] = NULL ;  // Clear memory
